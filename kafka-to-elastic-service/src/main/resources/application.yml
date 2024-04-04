@@ -1,18 +1,15 @@
 spring:
   application:
-    name: twitter-to-kafka-service
+    name: kafka-to-elastic-service
   profiles:
-    active: twitter_to_kafka
+    active: kafka_to_elastic
   config:
     import: 'configserver:'
   cloud:
     config:
-      name: twitter-to-kafka-service,config-client
+      name: kafka-to-elastic-service,config-client
       username: spring_cloud_user
       password: '{cipher}55529101085801c7ec539438750728183880c15d1d26b5a6503860a2777e5349c7770d11beb469dff05a686fd709981a'
 
 log:
-  app-name: twitter-to-kafka-service
-
-twitter-to-kafka-service:
-  enable-mock-tweets: true
+  app-name: kafka-to-elastic-service

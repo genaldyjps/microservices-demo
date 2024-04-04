@@ -16,13 +16,16 @@ spring:
           uri: https://github.com/genaldyjps/spring-cloud-config-server-repository
           default-label: master
           username: genaldyjps
-          password: patisenda69
+          password: '{cipher}10b4b515f12a1f0b92fb8e7810bb3d5d816698d9bf5f4f0ef52bbacd0ca86c74'
           clone-on-start: true
     fail-fast: true
   security:
     user:
       name: spring_cloud_user
-      password: '1234'
+      password: '{cipher}55529101085801c7ec539438750728183880c15d1d26b5a6503860a2777e5349c7770d11beb469dff05a686fd709981a'
 
 log:
   app-name: config-server
+
+#encrypt:
+#  key: "45D81EC1EF61DF9AD8D3E5BB397F9"
